@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.board-container {
+    
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* td {
+    text-align: center 
+} */
+
+.btn{
+    width:30px;
+    height:30px;
+    background-color: lightgray;
+    margin: 0 auto;
+    text-align: center 
+}
+
+table{
+    text-align: center;
+    margin:0 auto;
+}
