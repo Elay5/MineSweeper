@@ -3,26 +3,38 @@ body {
     margin: 0 auto;
 }
 
+
+
 .board-container {
+    max-width:30px;
     
     text-align: center;
     margin: 0 auto;
+    background-color: lightgray; 
     margin-top: 100px;
+    
 }
-
-/* td {
-    text-align: center 
-} */
 
 .btn{
     width:30px;
     height:30px;
-    background-color: lightgray;
-    margin: 0 auto;
-    text-align: center 
+    background-color: lightgray; 
+display: inline-block;
+    text-align: center; 
+ 
+    
 }
 
 table{
+ 
     text-align: center;
-    margin:0 auto;
+    background-color: lightgray;
+    border-collapse: collapse;
+    margin: 0 auto;
+    
 }
+
+.btn span .hidden{
+    display:none;
+}
+
