@@ -10,14 +10,19 @@
 
 <body onload="onInit()">
     <h1>MineSweeper</h1>
-    <button onclick="gameLevel(1,1),startGame()">beginner</button>
-    <button onclick="gameLevel(2,7),startGame()">intermediate</button>
-    <button onclick="gameLevel(3,16),startGame()">expert</button>
-    <h2>click the smiley to play</h2>
-    <div><img src="happySmiley.jpg" onclick="startGame()"></img></div>
+    <button onclick="gameLevel(1,1),restartGame()">beginner</button>
+    <button onclick="gameLevel(2,7),restartGame()">intermediate</button>
+    <button onclick="gameLevel(3,16),restartGame()">expert</button>
+   <h2>Mines Left: <span class="mines-left">0</span>time: <span class="time">0.000</span></h2> 
+   <!-- <h2>time: <span class="time">0.000</span></h2>  -->
+    <h3>click the smiley to restart</h3>
+    <div><img src="img/normsmiley.jpg" id="smiley" onclick="restartGame()"></img></div>
     <div class="lose">Game Over, click the smiley to try again</div>
     <div class="board-container"></div>
-    <div class="win" >Congratulations, you won!</div>
+    <div class="win" >Congratulations, you have found all the mines!</div>
+    
+    
+    <img src="img/winImg.jpg" class="winImg"></img>
     
 
 <footer>Copyright © 2024 E'lay Don. All Rights Reserved.</footer>
