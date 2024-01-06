@@ -272,6 +272,7 @@ function startGame() {
 }
 
 function restartGame() {
+    gLevel.LIVES=3
     gGame.isOn = true
     const elWin = document.querySelector('.win')
     const elLose = document.querySelector('.lose')
