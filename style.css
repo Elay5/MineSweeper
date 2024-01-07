@@ -7,12 +7,10 @@ body {
 
 
 .board-container {
-   
+    max-width: 380px;
     max-height: 380px;
-   
     text-align: center;
     margin: 0 auto;
-    
     margin-top: 30px;
     margin-bottom: 30px;
 
@@ -23,7 +21,7 @@ button {
     height: 30px;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: smaller;
-    background-color: rgb(249, 233, 233);
+    background-color: rgb(191, 82, 82);
     text-align: center;
 
 }
@@ -45,6 +43,7 @@ table {
     height: 30px;
     text-align: center;
     background-color: rgb(230, 247, 247);
+    
 
 }
 

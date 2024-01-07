@@ -1,22 +1,12 @@
 'use strict'
 
 
-
-function renderBoard(board) {
-
-
-
+function renderBoard(board) { 
     var strHtml = '<table oncontextmenu="return false"><tbody>'    //oncontextmenu="return false"
     for (var i = 0; i < gLevel.SIZE; i++) {
         strHtml += `<tr>\n`
         for (var j = 0; j < gLevel.SIZE; j++) {
-            // if(gGame.shownCount===0&&board[i][j].isMine){
-            //     board[i][j].isMine=false
-                
-            // }
-           
             if (!board[i][j].isShown) {
-              
                 strHtml += `
                 \t<td>
                      <button class="cell cell-${i}-${j}"id="flagCheck"
@@ -71,47 +61,6 @@ function startTimer() {
 }
 function resetTimer() {
 	clearInterval(gTimer)
-	
+	var elTimer = document.querySelector('.time')
+	elTimer.innerText = '0.000'
 }
-
-
-
-// function renderBoard(board) { 
-    
-//     var strHtml = '<table oncontextmenu="return false"><tbody>'    //oncontextmenu="return false"
-//     for (var i = 0; i < gLevel.SIZE; i++) {
-//         strHtml += `<tr>\n`
-//         for (var j = 0; j < gLevel.SIZE; j++) {
-//             if (!board[i][j].isShown) {
-//                 strHtml += `
-//                 \t<td>
-//                      <button class="cell cell-${i}-${j}"id="flagCheck"
-//                       onclick="onCellClicked(this,${i},${j}) "oncontextmenu=onCellMarked(this,${i},${j})> </button>
-//                  </td>\n`
-//             }
-//             else {
-
-//                 if (!board[i][j].isMine) {
-//                     strHtml += `
-//                     \t<td>
-//                          <button class="cell cell-${i}-${j}"id="flagCheck"
-//                           onclick="onCellClicked(this,${i},${j})"
-//                           >${board[i][j].minesAroundCount}</button>
-//                      </td>\n`
-//                 }
-//                 else {
-//                     strHtml += `
-//                      \t<td>
-//                           <button class="cell cell-${i}-${j}"id="flagCheck"
-//                           onclick="onCellClicked(this,${i},${j})"
-//                           >${MINE}</button>
-//                       </td>\n`
-//                 }
-//             }
-//         }
-//         strHtml += `</tr>\n`
-//     }
-//     strHtml += '<table><tbody>'
-//     var elBoard = document.querySelector('.board-container')
-//     elBoard.innerHTML = strHtml
-// }
